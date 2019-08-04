@@ -11,5 +11,14 @@ module.exports = {
                 resolve(`${nombre} ${apellido}`);
             }, 5000); 
         })
+    },
+
+    sumPromise: function(n1,n2){
+        return new Promise((resolve,reject)=>{
+            console.log("Vamo A Suma");
+            setTimeout(()=>{
+                resolve(n1+n2);
+            },3000);
+        })
     }
 }
